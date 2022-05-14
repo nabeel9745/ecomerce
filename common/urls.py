@@ -4,6 +4,6 @@ from .import views
 app_name='common'
 
 urlpatterns=[
-path('',views.customerregister),
-path('login',views.login),
+path('customerregistration',views.customerregister),
+path('',views.login),
 ]
