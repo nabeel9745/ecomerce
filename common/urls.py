@@ -5,5 +5,6 @@ app_name='common'
 
 urlpatterns=[
 path('customerregistration',views.customerregister),
-path('',views.login),
+path('login',views.login),
+path('new',views.new),
 ]

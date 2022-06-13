@@ -1,0 +1,21 @@
+ body{
+    margin: 0%;
+}
+#social{
+    background-color: rgb(13, 13, 104);
+    height: 50px;
+    width: 100%;
+}
+#img{
+    height: 50px;
+    width: 80px;
+    margin-left: 100px;
+}
+
+#contact{
+    margin-left: 900px;
+    color: aliceblue;
+   margin-top: -37px;
+
+   
+} 

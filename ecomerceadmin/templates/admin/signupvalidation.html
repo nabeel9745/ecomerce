@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div align="center">
+        <h2>signin</h2>
+        <form>
+            <label for="username"> username :</label>
+            <input id="username" type="text"><br><br>
+            <b id="b1" style="color:red ;"></b><br>
+            <label for="">email : </label>
+            <input id="email" type="text"><br><br>
+            <b id="b2" style="color:red ;"></b><br>
+            <label for="number"> phone number:</label>
+            <input id="number" type="number"><br><br>
+            <b id="b3" style="color: red;"></b><br>
+            <label for="password">password</label>
+            <input id="password" type="password"><br><br>
+            <b id="b4" style="color:rgb(0, 255, 85) ;"></b>
+            <label for="">confirm</label>
+            <input id="confirm" type="password"><br><br>
+            <b id="b5" style="color: blue;"></b>
+            <button onclick="return validation()">submit</button>
+
+        </form>
+        <script>
+            function validation() {
+                status = 1
+                username = document.getElementById("username").value
+                email = document.getElementById("email").value
+                number = document.getElementById("number").value
+                password = document.getElementById("password").value
+                confirmation = document.getElementById("confirm").value
+
+                console.log(password)
+                console.log(confirmation)
+
+                if (username == '') {
+                    document.getElementById("b1").innerHTML = "please fill your username"
+                    status = 0
+                }
+                else {
+                    document.getElementById("b1").innerHTML = ""
+
+                }
+                if (email == '') {
+                    document.getElementById("b2").innerHTML = "please fill your email"
+                    status = 0
+                }
+                else {
+                    document.getElementById("b2").innerHTML = ""
+
+                }
+                if (number.length !== 8) {
+                    document.getElementById("b3").innerHTML = "atleast you need to input 8 numbers"
+                    status = 0
+                }
+                else {
+                    document.getElementById("b3").innereHTML = ""
+
+                }
+                if (password.length !== 6) {
+                    document.getElementById("b4").innerHTML = "PASSWORD NOT FILLED"
+                    status = 0
+                }
+                else {
+                    document.getElementById("b4").innerHTML = ""
+
+                }
+                if (confirmation != password) {
+                    document.getElementById("b5").innerHTML = "Pasword must be same "
+                }
+                else {
+                    document.getElementById("b5").innerHTML = ""
+
+
+                }
+                if (status == 0) {
+                    return false
+                }
+                
+
+            }
+        </script>
+    </div>
+</body>
+
+</html>

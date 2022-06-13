@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <input type="text" placeholder="firstnumber" name="first" id="num1">
+        <input type="text" placeholder="secondnumber" name="second" id="num2">
+        <b id="result"></b>
+        <button onclick="add()">add</button>
+
+     
+        <script>
+            function add() {
+                num1 = Number(document.getElementById("num1").value)
+                num2 = Number(document.getElementById("num2").value)
+
+                console.log(num1)
+                console.log(num2)
+            sum = num1 + num2
+            document.getElementById('result').innerHTML=sum
+            document.getElementById('result').style.color="red"
+
+
+            }
+           
+        </script> -->
+
+    <div align="center">
+
+        <h2>sign up</h2>
+        <form>
+        <label for="username"> username :</label>
+        <input id="username" type="text"><br><br>
+        <b id="b1"style="color:red ;"></b><br>
+        <label for="">email : </label>
+        <input id="email" type="text"><br><br>
+        <b  id="b2"style="color:red ;"></b><br>
+        <button onclick="return  validation()">subit</button>
+    </form> 
+
+
+    </div>
+    <script>
+
+
+
+        function validation() {
+            status = 1
+            username = document.getElementById("username").value
+            email = document.getElementById("email").value
+
+            console.log(username)
+            console.log(email)
+            if(username == ''){
+               document.getElementById("b1").innerHTML="please fill your username"
+             status = 0
+            }
+            else{
+                document.getElementById("b1").innerHTML=""
+
+            }
+
+            if(email == ''){
+               document.getElementById("b2").innerHTML="please fill your email"
+                status = 0
+            }
+            else{
+                document.getElementById("b2").innerHTML=""
+
+            }
+if (status == 0){
+    return false
+}
+        }
+    </script>
+
+</body>
+
+</html>
