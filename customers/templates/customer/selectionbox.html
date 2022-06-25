@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+    <div>
+        <label for="">enter first number</label>
+        <input type="text" name="" id="first"><br>
+       
+        <label for="">Enter second number</label>
+        <input type="text" name="" id="second"><br>
+        <label for="">select operater</label>
+        <select name="" id="select">
+            <option value="">select</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select><br>
+       
+        <button onclick="operation() "id="button" type="submit">SUMBIT</button>
+        <label id="result"></label>
+
+
+        <script>
+            function operation() {
+                var first = document.getElementById("first").value
+                var second = document.getElementById("second").value
+                var select = document.getElementById("select").value
+                var result = parseInt( document.getElementById("result").value)
+
+                    if (select == "+" ){
+                       c = parseInt(first)+parseInt(second)
+                        document.getElementById("result").innerHTML=c
+            }
+           else if(select == "-"){
+             c= parseInt(first)-parseInt(second)
+              document.getElementById("result").innerHTML=c
+
+             
+           }
+           else if(select == "*"){
+             c= parseInt(first)*parseInt(second)
+              document.getElementById("result").innerHTML=c
+
+             
+           }
+           else{
+            c= parseInt(first)/parseInt(second)
+              document.getElementById("result").innerHTML=c
+           }
+ 
+    }
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+    #div1{
+        width: 700px;
+        height: 400px;
+        position: relative;            
+        background-color: blue;
+        /* display: none; */
+    }
+    #btn1{
+  width: 100%;
+    }
+</style>
+</head>
+<body>
+<!-- <p>hello</p>
+<h1 id="id1">maaan!</p>
+<p class="class1">yes</p>    
+<script>
+    $('P').css("background-color","red")
+    $('#id1').css("background-color","blue")
+    $('.class1').css("background-color","green")
+
+
+</script> -->
+
+<!-- /////----hide , show and toggle----////////  -->
+
+<!-- <p>paraa...</p>
+<button id="hide">hide</button>
+<button id="show">show</button>
+<button id="btn3">toggle</button>
+
+
+
+<script>
+$(document).ready(function(){
+$("#hide").click(function(){
+    $('p').hide('5000');
+})
+$('#show').click(function(){
+    $('p').show();
+})
+$('#btn3').click(function(){
+    $('p').toggle('5000');
+})
+})
+</script> -->
+
+<!-- //////--checkbox---/// -->
+
+<!-- <h1>SHOW THE TEXT WHEN WE CHECK</h1>
+<input type="checkbox" name="" id="check1"> i accept <br>
+<input style="display:none ;" type="text" name="" id="txt" placeholder="Aadaar no">
+
+<script>
+  $(document).ready(function(){
+  $("#check1").click(function(){
+    $("#txt").toggle()
+  })
+  })
+</script>
+   -->
+
+  <!-- ////--hover--///// -->
+   <!-- <p>hello iam a homosapiens</p>
+   <script>
+    $(document).ready(function(){
+        $("p").mouseover(function(){
+            $("p").css("color","red")
+        })
+        $("p").mouseleave(function(){
+            $("p").css("color","blue")
+        })
+
+    })
+   </script> -->
+
+<!-- //////----slide----//// -->
+ 
+ <!-- <button id="btn1">click</button>
+  <div id="div1">
+ 
+  </div>
+<script>
+  $(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#div1").fadeIn(1000)
+    })
+  })
+
+</script> -->
+
+<!-- /////--fade to--//// -->
+
+
+<!-- <button id="btn1">fade to</button>
+  <div id="div1">
+ 
+  </div>
+<script>
+  $(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#div1").fadeTo(2000,0.5)
+    })
+  }) -->
+
+
+  <!-- ///////---delay-----////// -->
+  <!-- <button id="btn1">delay</button>
+  <div id="div1">
+ 
+  </div>
+<script>
+  $(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#div1").delay(5000).fadeToggle(1000);
+    })
+
+  }) -->
+
+
+  <!-- //////--animate--///// -->
+<!-- 
+  <button id="btn1">animate</button>
+  <div id="div1">
+ 
+  </div>
+<script>
+  $(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#div1").animate({
+          height:"200px",
+          width:"400px"
+        });
+    })
+
+  }) -->
+
+
+  <!-- ////---// -->
+
+  
+  <!-- <button id="btn1">animate</button>
+  <div id="div1">
+ 
+  </div>
+<script>
+  $(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#div1").animate({
+        // left:"100"
+        
+        });
+    })
+
+  }) -->
+
+
+  <!-- /////--//// -->
+  <!-- <button id="btn1">animate</button>
+  <div id="div1">
+ 
+  </div>
+<script>
+  $(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#div1").animate({
+        left:"100px"    
+        })
+        .delay(1000)
+        .animate({
+          top:"100px"
+        })
+        .delay(1000)
+        .animate({
+          left:"0px"
+        })
+        .delay(1000)
+        .animate({
+          top:"0px"
+        })
+
+
+    })
+
+  }) -->
+
+<!-- 
+  /////---/// -->
+
+  <button id="btn1">animate</button>
+  <div id="div1">
+ 
+  </div>
+<script>
+  $(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#div1").animate({                      ////position--relative for animation--////
+        left:"100px",  
+        top:"100px"  
+        })
+        .delay(1000)
+        .animate({
+          top:"0px"
+        })
+        .delay(1000)
+        .animate({
+          top:"100px",
+          left:"0px"
+        })
+        .delay(1000)
+        .animate({
+          top:"0px"
+        })
+
+      
+
+
+    })
+
+  })
+
+</script>
+
+</body>
+</html>

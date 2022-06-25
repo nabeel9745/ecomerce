@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="txt">
+    <button onclick=" press()">SEARCH</button>
+    <br>
+    <label id="apl" for="">apple</label><br>
+    <label id="org" for="">orange</label><br>
+    <label id="bna" for="">banana</label><br>
+    <label id="mng" for="">mango</label>
+
+
+
+
+    <script>
+        function press(){
+          
+           search = document.getElementById("txt").value
+
+           if (search == "apple"){
+            document.getElementById("apl").innerHTML="apple"
+           }
+           else{
+            document.getElementById("apl").innerHTML=""
+
+           }
+           
+           if (search == "orange"){
+            document.getElementById("org").innerHTML="ORANGE "
+           }
+           else{
+            document.getElementById("org").innerHTML=""
+
+           }
+             
+           if (search == "banana"){
+            document.getElementById("bna").innerHTML="banana"
+           }
+           else{
+            document.getElementById("bna").innerHTML=""
+
+           }
+           if (search == "mango"){
+            document.getElementById("mng").innerHTML="mango"
+           }
+           else{
+            document.getElementById("mng").innerHTML=""
+
+           }
+        }
+    </script>
+
+</body>
+</html>
