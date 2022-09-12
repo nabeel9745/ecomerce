@@ -13,4 +13,6 @@ path("eg",views.eg),
 path("example",views.example),
 path('validation',views.validation),
 path("sign",views.sign),
+path("s",views.s),
+
 ]

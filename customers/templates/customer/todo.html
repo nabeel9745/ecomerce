@@ -11,7 +11,9 @@
 <body>
     <div>
         <label for="">FIRST BOX</label>
-        <input type="text" id="txt">
+        <input type="text" id="txt"><br>
+        <label for="">description</label>
+       
         <button onclick="sub()">submit</button>
        
 
@@ -20,6 +22,7 @@
     <ul id="myList">
        
       </ul>
+      <button  onclick="reset()">delete</button>
     <script>
 
 
@@ -29,8 +32,12 @@
             const textnode = document.createTextNode(text);
             node.appendChild(textnode);
             document.getElementById("myList").appendChild(node);
-
+            
         }
+        function reset(){
+        document.getElementById("myList").innerHTML=""
+        console.log(myList)
+    }
     </script>
 
 

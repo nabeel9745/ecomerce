@@ -28,3 +28,6 @@ def validation(request):
 
 def sign(request):
     return render(request,'admin/signupvalidation.html')                 
+
+def s(request):
+    return render(request,'admin/script2.html')

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>editing page</h3>
+    <form action="{% url 'edit_window' updated.id %}" method="post">
+        {% csrf_token %}
+    <label for="">name</label>
+    <input type="text" name="name" value="{{updated.name}}"><br><br>
+    <label for="">cls</label>
+    <input type="text" name="cls" value="{{updated.cls}}"><br><br>
+    <label for="">roll</label>
+    <input type="number" name="roll" value="{{updated.roll}}"><br><br>
+    <input type="submit">
+</body>
+</html>

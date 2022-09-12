@@ -12,6 +12,10 @@ path('selectionbox',views.selectionbox),
 path('sort',views.sort),
 path('jquery',views.jquery),
 path('w',views.w),
+path('queryhtml',views.queryhtml),
+path('todobox',views.todobox),
+
+
 
 
 

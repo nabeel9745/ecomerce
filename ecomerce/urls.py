@@ -23,5 +23,7 @@ urlpatterns = [
     path('customers/',include('customers.urls')),
     path('reseller/',include('reseller.urls')),
     path('ecomerceadmin/',include('ecomerceadmin.urls')),
+    path('seller/',include('seller.urls')),
+
 ]
     

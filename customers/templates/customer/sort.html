@@ -7,53 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" name="" id="txt">
-    <button onclick=" press()">SEARCH</button>
-    <br>
-    <label id="apl" for="">apple</label><br>
-    <label id="org" for="">orange</label><br>
-    <label id="bna" for="">banana</label><br>
-    <label id="mng" for="">mango</label>
-
-
-
-
+    <input id="txt" type="text">
+    <button id="btn" onclick="sort()">button</button><br>
+    <label id="lbl" for=""></label>
     <script>
-        function press(){
-          
-           search = document.getElementById("txt").value
+function sort(){
+  
+   name = document.getElementById("txt").value
+   names = ["sam", "sara", "dan", "janu", "john"]
 
-           if (search == "apple"){
-            document.getElementById("apl").innerHTML="apple"
-           }
-           else{
-            document.getElementById("apl").innerHTML=""
-
-           }
-           
-           if (search == "orange"){
-            document.getElementById("org").innerHTML="ORANGE "
-           }
-           else{
-            document.getElementById("org").innerHTML=""
-
-           }
-             
-           if (search == "banana"){
-            document.getElementById("bna").innerHTML="banana"
-           }
-           else{
-            document.getElementById("bna").innerHTML=""
-
-           }
-           if (search == "mango"){
-            document.getElementById("mng").innerHTML="mango"
-           }
-           else{
-            document.getElementById("mng").innerHTML=""
-
-           }
+    for (item of names) {
+        if (item == name) {
+   document.getElementById("lbl").innerHTML = item       
         }
+    }
+}
     </script>
 
 </body>

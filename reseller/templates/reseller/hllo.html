@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2">
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>cls</th>
+            <th>roll</th>
+            <!-- <th>update</th> -->
+
+        </tr>
+        {% for i in display %}
+        <tr>
+            <th>{{i.id}}</th>
+            <th>{{i.name}}</th>
+            <th>{{i.cls}}</th>
+            <th>{{i.roll}}</th>
+            <!-- <th><a href="{% url 'u_window' i.id %}">Update</a></th> -->
+
+
+        </tr>
+    {% endfor %}
+
+
+    </table>
+    
+</body>
+</html>

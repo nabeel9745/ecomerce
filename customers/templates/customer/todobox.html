@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mylist{
+            border: solid;
+        }
+    </style>
+</head>
+<body>
+    <label for="">Firstbox</label>
+    <input type="text" name="" id="txt"><br>
+    <label for="">description</label>
+    <input type="text" name="" id="txt2"><br>
+    <button onclick="sub()">submit</button>
+    <table id="myList">
+        <tr id="tr1"></tr>
+        <tr id="tr2"></tr>
+
+      <button  onclick="reset()">delete</button>
+
+    </table>
+
+    
+
+    <script>
+        function sub(){
+            var a = document.getElementById("txt").value;
+            var b = document.getElementById("txt2").value;
+          
+            document.getElementById("tr1").innerHTML = a
+            document.getElementById("tr2").innerHTML = b
+        }
+        function reset(){
+        document.getElementById("myList").innerHTML=""
+        console.log(myList)
+    }
+    </script>
+</body>
+</html>

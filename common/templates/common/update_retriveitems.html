@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{% url 'edit_update' update_list.id %}" method="post">
+        {% csrf_token %}
+    <label for="">name</label>
+    <input type="text" name="name" value="{{update_list.name}}"><br><br>
+    <label for="">password</label>
+    <input type="password" name="password" value="{{update_list.password}}"><br><br>
+    <label for="">email</label>
+    <input type="email" name="email" value="{{update_list.email}}"><br><br>
+    <label for="">phn</label>
+    <input type="text" name="phn" value="{{update_list.phn}}"><br><br>
+    <label for="">address</label>
+    <textarea name="address" id="" cols="30" rows="10" >{{update_list.address}}</textarea><br><br>
+    <button>submit</button>
+</form>
+
+    
+</body>
+</html>

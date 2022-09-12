@@ -26,3 +26,8 @@ def jquery(request):
 def w(request):
      return render(request,'customer/w.html')
 
+def queryhtml(request):
+     return render(request,'customer/queryhtml.html')
+
+def todobox(request):
+     return render(request,'customer/todobox.html')
