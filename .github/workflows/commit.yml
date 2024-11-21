@@ -1,9 +1,9 @@
-name: Automate Commit
+name: Automate Commit with Fixed Message
 
 on:
   push:
     branches:
-      - master  # Trigger when changes are pushed to the 'main' branch
+      - main  # Trigger when changes are pushed to the 'main' branch
 
 jobs:
   commit-changes:
@@ -17,19 +17,19 @@ jobs:
       # Step 2: Set up Git configuration
       - name: Set up Git
         run: |
-          git config user.name "nabeel9745"
-          git config user.email "nabeel4785@gmail.com"
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
 
       # Step 3: Make changes to the repository
       - name: Make changes
         run: |
           echo "This file was updated automatically on $(date)" >> automated-file.txt
 
-      # Step 4: Commit the changes
+      # Step 4: Commit the changes with a fixed prefix
       - name: Commit changes
         run: |
           git add .
-          git commit -m "Your Custom Message | Automated update on $(date)" || echo "No changes to commit"
+          git commit -m "FIXED-PREFIX: Automated update on $(date)" || echo "No changes to commit"
 
       # Step 5: Push the changes back to the repository
       - name: Push changes
