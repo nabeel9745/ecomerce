@@ -1,0 +1,36 @@
+name: Automate Commit
+
+on:
+  push:
+    branches:
+      - master  # Trigger when changes are pushed to the 'main' branch
+
+jobs:
+  commit-changes:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Git configuration
+      - name: Set up Git
+        run: |
+          git config user.name "nabeel9745"
+          git config user.email "nabeel4785@gmail.com"
+
+      # Step 3: Make changes to the repository
+      - name: Make changes
+        run: |
+          echo "This file was updated automatically on $(date)" >> automated-file.txt
+
+      # Step 4: Commit the changes
+      - name: Commit changes
+        run: |
+          git add .
+          git commit -m "Automated update on $(date)" || echo "No changes to commit"
+
+      # Step 5: Push the changes back to the repository
+      - name: Push changes
+        run: git push
