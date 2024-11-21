@@ -3,7 +3,7 @@ name: Automate Commit with Fixed Message
 on:
   push:
     branches:
-      - main  # Trigger when changes are pushed to the 'main' branch
+      - master  # Trigger when changes are pushed to the 'main' branch
 
 jobs:
   commit-changes:
